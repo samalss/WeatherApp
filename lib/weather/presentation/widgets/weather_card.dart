@@ -5,11 +5,13 @@ import 'package:intl/intl.dart';
 class WeatherCard extends StatelessWidget {
   final WeatherEntity weather;
   final VoidCallback onRefresh;
+  final DateTime lastUpdated; // Добавлено поле
 
   const WeatherCard({
     Key? key,
     required this.weather,
     required this.onRefresh,
+    required this.lastUpdated, // Обязательно указываем
   }) : super(key: key);
 
   @override
@@ -153,7 +155,14 @@ class WeatherCard extends StatelessWidget {
                   ),
                 ],
               ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 16),
+            Text(
+              'Последнее обновление: ${DateFormat('HH:mm').format(lastUpdated)}',
+              style: const TextStyle(
+                fontSize: 14,
+                color: Colors.grey,
+              ),
+            ),
           ],
         ),
       ),

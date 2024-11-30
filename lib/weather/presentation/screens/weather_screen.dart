@@ -66,15 +66,15 @@ class WeatherScreen extends StatelessWidget {
                                             state.weather.cityName),
                                       );
                                 },
+                                lastUpdated: state.lastUpdated,
                               ),
-                              const SizedBox(height: 10),
                               const Divider(
                                 color: Colors.white30,
                                 thickness: 1,
                                 indent: 50,
                                 endIndent: 50,
                               ),
-                              const SizedBox(height: 10),
+                              const SizedBox(height: 5),
                               const Text(
                                 'Данные предоставлены WeatherAPI',
                                 style: TextStyle(

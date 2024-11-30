@@ -8,8 +8,9 @@ class WeatherLoading extends WeatherState {}
 
 class WeatherLoaded extends WeatherState {
   final WeatherEntity weather;
+  final DateTime lastUpdated;
 
-  WeatherLoaded(this.weather);
+  WeatherLoaded(this.weather) : lastUpdated = DateTime.now();
 }
 
 class WeatherError extends WeatherState {
