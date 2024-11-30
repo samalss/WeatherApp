@@ -67,4 +67,4 @@ WeatherApp/
 ## 🖼 Скриншоты
 
 ### Главный экран
-![Главный экран](assets/screenshots/main_screen.png)
+<img src="assets/screenshots/main_screen.png" alt="Главный экран" width="100" />
