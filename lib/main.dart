@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         initialRoute: AppRoutes.weatherScreen,
         onGenerateRoute: AppRoutes.generateRoute,
+        debugShowCheckedModeBanner: false,
         home: WeatherScreen(),
       ),
     );

@@ -1,16 +1,70 @@
-# weather_api_app
+# Weather App
 
-A new Flutter project.
+**Weather App** — это кроссплатформенное приложение, созданное на Flutter. Приложение использует API от [WeatherAPI](https://www.weatherapi.com/) для получения данных.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Основные функции
 
-A few resources to get you started if this is your first Flutter project:
+- 📍 Отображение текущей погоды для указанного города.
+- 🌦 Прогноз на 5 дней с дневной и ночной температурой.
+- ⏱ Автоматическое обновление данных каждую минуту.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Используемые технологии
+
+- **[Flutter](https://flutter.dev/):** Фреймворк для кроссплатформенной разработки.
+- **[WeatherAPI](https://www.weatherapi.com/):** API для получения погодных данных.
+- **[Bloc](https://bloclibrary.dev/):** Управление состоянием в приложении.
+- **[intl](https://pub.dev/packages/intl):** Форматирование даты и времени.
+
+---
+## 📦 Установка и настройка
+
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/samalss/WeatherApp.git
+   ```
+
+2. Перейдите в папку проекта:
+   ```bash
+   cd WeatherApp
+   ```
+
+3. Установите зависимости:
+   ```bash
+   flutter pub get
+   ```
+
+4. Настройте API-ключ:
+   - Откройте файл `lib/core/constants/api_constants.dart`.
+   - Замените строку `'your_api'` на ваш реальный API-ключ.
+
+5. Запустите приложение:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 📂 Структура проекта
+
+```plaintext
+WeatherApp/
+├── lib/
+│   ├── config/                # Routes, Theme
+│   ├── core/                  # Constants, Utils
+│   ├── weather/               # Основная функциональность
+│   │   ├── data/              # Repository, Models
+│   │   ├── domain/            # Use cases, Entities
+│   │   ├── presentation/      # Bloc, Screens, Widgets
+│   ├── main.dart              
+├── pubspec.yaml               # Зависимости Flutter
+└── README.md                  # Описание проекта
+```
+
+## 🖼 Скриншоты
+
+### Главный экран
+![Главный экран](assets/screenshots/main_screen.png)

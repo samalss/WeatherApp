@@ -5,13 +5,13 @@ import 'package:intl/intl.dart';
 class WeatherCard extends StatelessWidget {
   final WeatherEntity weather;
   final VoidCallback onRefresh;
-  final DateTime lastUpdated; // Добавлено поле
+  final DateTime lastUpdated;
 
   const WeatherCard({
     Key? key,
     required this.weather,
     required this.onRefresh,
-    required this.lastUpdated, // Обязательно указываем
+    required this.lastUpdated,
   }) : super(key: key);
 
   @override
